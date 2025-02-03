@@ -18,12 +18,12 @@ class Card {
 }
 
 class Deck {
-    private List<Card> cards;  // Atributo 1: Lista de cartas (Collection Framework)
-    private Set<String> usedCards;  // Atributo 2: Conjunto para rastrear cartas jugadas (Collection Framework)
+    private List<Card> cards;
+    private Set<String> usedCards;
 
     public Deck() {
-        cards = new ArrayList<>();  // Usamos ArrayList porque permite eliminar elementos fácilmente
-        usedCards = new HashSet<>(); // Usamos HashSet para rastrear cartas jugadas
+        cards = new ArrayList<>();
+        usedCards = new HashSet<>();
 
         String[] suits = {"Tréboles", "Corazones", "Picas", "Diamantes"};
         String[] values = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "J", "Q", "K"};
@@ -85,7 +85,7 @@ class Deck {
             System.out.println(card);
         }
 
-        // Imprimir el número de cartas restantes en el deck (solo una vez)
+        // Imprimir el número de cartas restantes en el deck
         System.out.println("Quedan " + cards.size());
     }
 }
